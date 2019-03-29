@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
 
     writeButton.setOnClickListener { write() }
     readButton.setOnClickListener { read() }
+
+    write2Button.setOnClickListener { write2() }
+    read2Button.setOnClickListener { read2() }
   }
 
   private fun write() {
@@ -24,11 +27,24 @@ class MainActivity : AppCompatActivity() {
   }
 
   private fun read() {
-    Log.i("###", "" + AppPreference.users)
+    Log.i("APP#", "MainActivity.read(): ${AppPreference.users}")
     body.text = AppPreference.users.toString()
+  }
 
-//    for (user in AppPreference.users!!) {
-//      Log.i("APP# MainActivity | read", user.name + ", " + user.age)
-//    }
+  private fun write2() {
+    Log.i("APP#", "111111 MainActivity.write2(): ${AppPreference.hashSetIds}")
+
+    AppPreference.hashSetIds.add((1..100).random())
+    AppPreference.hashSetIds.add((1..100).random())
+    AppPreference.hashSetIds.add((1..100).random())
+    AppPreference.hashSetIds.add((1..100).random())
+    AppPreference.hashSetIds.add((1..100).random())
+
+    read2()
+  }
+
+  private fun read2() {
+    Log.i("APP#", "MainActivity.read2(): ${AppPreference.hashSetIds}")
+    body2.text = AppPreference.hashSetIds.toString()
   }
 }

@@ -9,17 +9,45 @@
     android:id="@+id/writeButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="write1" />
+    android:text="write custom class" />
 
   <Button
     android:id="@+id/readButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="read1" />
+    android:text="read custom class" />
 
   <TextView
     android:id="@+id/body"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Hello World!" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f00" />
+
+  <Button
+    android:id="@+id/write2Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="write hashset" />
+
+  <Button
+    android:id="@+id/read2Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="read hashset" />
+
+  <TextView
+    android:id="@+id/body2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello World!" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f00" />
 </LinearLayout>
