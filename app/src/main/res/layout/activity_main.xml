@@ -9,18 +9,17 @@
     android:id="@+id/writeButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="write"/>
+    android:text="write1" />
 
   <Button
     android:id="@+id/readButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="read"/>
+    android:text="read1" />
 
   <TextView
     android:id="@+id/body"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Hello World!"
-    />
+    android:text="Hello World!" />
 </LinearLayout>
